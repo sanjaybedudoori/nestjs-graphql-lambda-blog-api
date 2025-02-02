@@ -1,0 +1,17 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type BlogPost {
+  id: ID!
+  title: String!
+  content: String!
+}
+
+type Query {
+  getAllPosts: [BlogPost!]!
+}
+
+type Mutation {
+  createPost(title: String!, content: String!): BlogPost!
+}

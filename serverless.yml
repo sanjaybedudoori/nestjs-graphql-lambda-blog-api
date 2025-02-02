@@ -1,0 +1,28 @@
+service: blog-management
+
+provider:
+  timeout: 30
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+functions:
+  main:
+    handler: dist/main.handler
+    events:
+      - http:
+          path: management
+          method: post
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    noPrependStageInUrl: true
+
+package:
+  exclude:
+    - node_modules/**
+  include:
+    - dist/**
