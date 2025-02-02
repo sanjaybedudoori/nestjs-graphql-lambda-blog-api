@@ -24,7 +24,7 @@ Combining GraphQL, DynamoDB, NestJS, and AWS Lambda provides a powerful foundati
 
 ## Prerequisites
 
-1. **Node.js** installed on your machine.
+1. **Node.js, AWS CLI** installed on your machine.
 2. **Docker setup** for local testing.
 3. Basic knowledge of TypeScript, GraphQL, and AWS services.
 
